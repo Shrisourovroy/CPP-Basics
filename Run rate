@@ -1,0 +1,23 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){
+    int n;
+    cin>>n;
+    for(int i=1; i<=n; i++){
+        int a,b,c;
+        float c_r, r_r;
+
+        cin>>a>>b>>c;
+        c_r =  b/((300-c)/6.0);
+        if(b>a) r_r = 0.00;
+        else{
+             r_r =  ((a+1)-b)/(c/6.0);
+        }
+
+
+        cout<<fixed<<setprecision(2)<<c_r<<" "<<r_r;
+        if(i<n){cout<<endl;}
+    }
+    return 0;
+}
