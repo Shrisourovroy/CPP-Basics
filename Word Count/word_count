@@ -1,0 +1,23 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){
+
+    int T;
+    cin>>T;
+    cin.ignore();
+    for(int t=0; t<T; t++ ){
+
+        string s;
+        int space = 1;
+        getline(cin,s);
+        for(int i=0; i<s.length(); i++){
+            if(s[i] == ' '){
+                space++;
+            }
+        }
+        cout<<"Count = "<<space<<endl;
+    }
+
+    return 0;
+}
