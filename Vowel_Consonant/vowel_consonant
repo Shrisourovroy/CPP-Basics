@@ -1,0 +1,35 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int n;
+    cin>>n;
+    cin.ignore();
+    for(int i=0; i<n; i++)
+    {
+
+        string s;
+        string v,c;
+        getline(cin, s);
+
+        for(int j=0; j<s.length(); j++)
+        {
+
+            if(s[j]=='a' || s[j]=='e' || s[j]=='i' || s[j]=='o' || s[j]=='u')
+            {
+                v.push_back(s[j]);
+            }
+            else
+            {
+                if(s[j] != ' ')
+                {
+                    c.push_back(s[j]);
+                }
+            }
+        }
+        cout<<v<<endl;
+        cout<<c<<endl;
+
+    }
+    return 0;
+}
